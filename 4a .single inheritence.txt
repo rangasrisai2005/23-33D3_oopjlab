@@ -1,0 +1,28 @@
+class Single {
+    protected int i, j;
+
+    public void display(int a, int b) {
+        i = a;
+        j = b;
+        System.out.println("This is a parent class");
+        System.out.println(i);
+        System.out.println(j);
+    }
+}
+
+class Inherit extends Single {
+    public void display() {
+        System.out.println("This is a child class");
+    }
+}
+
+class SingleInherit {
+    public static void main(String[] args) {
+        Single obj1 = new Single();
+        obj1.display(11, 22);
+
+        Inherit obj2 = new Inherit();
+        obj2.display();
+        obj2.display(11, 22);
+    }
+}
