@@ -1,0 +1,12 @@
+class ConstructorExample {
+    int x;
+
+    ConstructorExample() {
+        x = 10;
+        System.out.println("Constructor called, x = " + x);
+    }
+
+    public static void main(String[] args) {
+        ConstructorExample obj = new ConstructorExample();
+    }
+}
