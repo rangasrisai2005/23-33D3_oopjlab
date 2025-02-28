@@ -1,0 +1,19 @@
+interface Bird{
+void birdFly();
+}
+interface BirdFood{
+void birdFly(){
+}
+class parrot implements Bird,BirdFood{
+public void birdFly(){
+system.out.println("parrots has more Flying power");
+}
+public void birdEat(){
+system.out.println("parrots eat Guava");
+}
+}
+class peacock implements Bird,BirdFood{
+pubic void birdEat(){
+system.out.println("peacock eat grains,plants");
+}
+}
