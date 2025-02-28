@@ -1,0 +1,60 @@
+
+abstract class Diffshapes {
+    abstract void area();
+}
+class Circle extends Diffshapes {
+    int radii;
+    Circle(int r) {
+        radii = r;
+    }
+    void area() {
+        System.out.println("The area of circle with radius " + radii + " is: " + (3.14 * radii * radii));
+    }
+}
+class Rectangle extends Diffshapes {
+    int len, bre;
+    Rectangle(int l, int b) {
+        len = l;
+        bre = b;
+    }
+    void area() {
+        System.out.println("The area of rectangle where length " + len + " and breadth " + bre + " is: " + (len * bre));
+    }
+}
+class Triangle extends Diffshapes {
+    int base, height;
+
+    Triangle(int b, int h) {
+        base = b;
+        height = h;
+    }
+
+    void area() {
+        System.out.println("The area of triangle is " + (0.5 * base * height));
+    }
+}
+class Square extends Diffshapes {
+    int side;
+
+    Square(int s) {
+        side = s;
+    }
+
+    void area() {
+        System.out.println("The area of square is " + (side * side));
+    }
+}
+class Abstractshaped {
+    public static void main(String[] args) {
+        Circle obj = new Circle(5);
+        obj.area();
+
+        Rectangle obj2 = new Rectangle(4, 6);
+        obj2.area();
+    }
+}
+triangle obj3 = new Triangle(3,7);
+obj3.area();
+
+Square obj4 = new Square(5);
+obj4.area();
