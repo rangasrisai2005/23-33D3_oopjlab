@@ -1,0 +1,39 @@
+interface Bird {
+    void birdFly();
+}
+
+interface BirdFood {
+    void birdEat();
+}
+
+class Parrot implements Bird, BirdFood {
+    public void birdFly() {
+        System.out.println("Parrot has more flying power.");
+    }
+
+    public void birdEat() {
+        System.out.println("Parrots eat Guava.");
+    }
+}
+
+class Peacock implements Bird, BirdFood {
+    public void birdFly() {
+        System.out.println("Peacocks fly very rarely.");
+    }
+
+    public void birdEat() {
+        System.out.println("Peacocks eat grains, plants.");
+    }
+}
+
+class OverridingEg {
+    public static void main(String args[]) {
+        Parrot obj1 = new Parrot();
+        obj1.birdFly();
+        obj1.birdEat();
+
+        Peacock obj2 = new Peacock();
+        obj2.birdFly();
+        obj2.birdEat();
+    }
+}
