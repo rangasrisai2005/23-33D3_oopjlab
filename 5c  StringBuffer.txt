@@ -1,0 +1,13 @@
+public class StringBufferExample {
+    public static void main(String args[]) {
+        StringBuffer sb = new StringBuffer("Hello world!");
+
+        System.out.println("Original string: " + sb);
+
+        sb.deleteCharAt(7);
+        System.out.println("After deleting character at index 7: " + sb);
+
+        sb.delete(5, 10);
+        System.out.println("After deleting substring from index 5 to 10: " + sb);
+    }
+}
