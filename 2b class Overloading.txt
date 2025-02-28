@@ -1,0 +1,15 @@
+class Overloading {
+    void display(int a) {
+        System.out.println("Integer: " + a);
+    }
+
+    void display(double b) {
+        System.out.println("Double: " + b);
+    }
+
+    public static void main(String[] args) {
+        Overloading obj = new Overloading();
+        obj.display(5);
+        obj.display(5.5);
+    }
+}
