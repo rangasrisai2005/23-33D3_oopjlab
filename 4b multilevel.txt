@@ -1,0 +1,28 @@
+ Superclass
+class Multilevel {
+    protected int a;
+
+    public void display(int i, int j) {
+        System.out.println("This is super class.");
+        System.out.println(i);
+        System.out.println(j);
+    }
+}
+class Inheritance extends Multilevel {
+    public void display() {
+        System.out.println("This is sub class (derived class).");
+    }
+}
+class Level extends Inheritance {
+    public void display(int a) {
+        System.out.println("Cube of " + a + " is: " + (a * a * a));
+    }
+}
+public class MultilevelInherit {
+    public static void main(String[] args) 
+        Level obj = new Level(); 
+obj.display(16);     
+        obj.display();    
+        obj.display(6, 66);  
+    }
+}
